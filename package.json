@@ -11,7 +11,8 @@
     "dev:investor": "npm run dev --workspace=apps/investor",
     "dev:admin": "npm run dev --workspace=apps/admin",
     "dev:server": "npm run dev --workspace=server",
-    "dev": "npm run dev:server & npm run dev:investor"
+    "dev": "npm run dev:server & npm run dev:investor",
+    "migrate": "node src/lib/migrate.js"
   },
   "devDependencies": {
     "canvas": "^3.2.3"
