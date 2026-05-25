@@ -1,0 +1,2 @@
+ALTER TABLE users
+ADD COLUMN toured_screens JSONB NOT NULL DEFAULT '{}';

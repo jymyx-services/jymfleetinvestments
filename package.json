@@ -1,0 +1,19 @@
+{
+  "name": "jfi-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/investor",
+    "apps/admin",
+    "server"
+  ],
+  "scripts": {
+    "dev:investor": "npm run dev --workspace=apps/investor",
+    "dev:admin": "npm run dev --workspace=apps/admin",
+    "dev:server": "npm run dev --workspace=server",
+    "dev": "npm run dev:server & npm run dev:investor"
+  },
+  "devDependencies": {
+    "canvas": "^3.2.3"
+  }
+}
